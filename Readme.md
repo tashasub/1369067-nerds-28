@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Tasha Subbotina](https://up.htmlacademy.ru/htmlcss/28/user/1369067).
-* Наставник: [Алексей Пудников] (https://htmlacademy.ru/profile/id71418).
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
