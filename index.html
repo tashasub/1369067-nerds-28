@@ -39,9 +39,9 @@
     <a href="">Узнать больше</a>
   </section>
   -->
-  <h1>Студия «Нердс»</h1>
+  <h1 class="visually-hidden">Студия «Нердс»</h1>
   <section>
-    <h2>Услуги</h2>
+    <h2 class="visually-hidden">Услуги</h2>
     <ul>
       <li>
           <a href="">
@@ -69,42 +69,74 @@
       </li>
     </ul>
   </section>
-  <!-- тут будет блок с позиционированием и RTB, пока просто заготовка с текстом
-<h2>Чем мы отличаемся</h2>
-<p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-<p>Выполняем заказы на разработку:</p>
-<ul>
-  <li>Веб-сайтов любой сложности </li>
-  <li>Мобильных приложений для iOS и Android  </li>
-  <li>Слайдшоу и видео для корпоративных презентаций</li>
-</ul>
-<p>с 2004 года Любим точность во всем:</p>
+  <section>
+   <h2 class="visually-hidden">Чем мы отличаемся</h2>
+    <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет</p> 
+    <p>превыше креатива. Работаем не покладая рук, как роботы.</p>
+    <p>Выполняем заказы на разработку:</p>
+     <ul>
+      <li>Веб-сайтов любой сложности</li>
+      <li>Мобильных приложений для iOS и Android</li>
+      <li>Слайдшоу и видео для корпоративных презентаций</li>
+     </ul>
+    <p>с 2004 года Любим точность во всем:</p>
+  </section>
+  <section>
+   <h2 class="visually-hidden">RTB</h2>
+   <img src="img/nerds-illustration 1.png" alt="Цветной логотип Нёрдс">
+   <ul>
+    <li>
+     <p>146<sup>%</sup></p>
+     <p>Уровень самоотдачи</p>
+    </li>
+    <li>
+     <p>100<sup>%</sup></p>
+     <p>Соблюдение сроков</p>
+    </li>
+    <li>
+     <p>50<sup>%</sup></p>
+     <p>Минимальная предоплата</p>
+    </li>
+   </ul>
+</section>
 <section>
-  <h2>RTB</h2>
-  <img src="img/nerds-illustration 1.png" alt="Цветной логотип Нердс">
+  <h2 class="visually-hidden">Наши проекты</h2>
   <ul>
     <li>
-    <p>146<sup>%</sup></p>
-    <p>Уровень  самоотдачи</p>
+     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placecorgi.com/199/67" alt="Логотип HTMLAcademy"></a>
     </li>
     <li>
-    <p>100<sup>%</sup></p>
-    <p>Соблюдение сроков</p>
+     <a href="#"><img src="img/logo-2_1.png" alt="Логотип Барбершопа Бородинский"></a>
+    </li>
+    </li>
+     <a href="#"><img src="img/logo-3_1.png" alt="Логотип проекта Пинк"></a>
     </li>
     <li>
-    <p>50<sup>%</sup></p>
-    <p>Минимальная предоплата</p>
+     <a href="#"><img src="img/logo-4_1.png" alt="Логотип магазина Мишка"></a>
     </li>
   </ul>
 </section>
--->
-  <!-- тут будет блок с логотипами-->
-  <!-- тут будет блок с картой-->
+<section>
+  <h2 class="visually-hidden">Как нас найти</h2>
+  <div>
+    <img src="img/map 1.png" alt="Карта города">
+    <div>
+      <img src="img/map-marker 1.png" alt="Маркер на карте">
+    </div>
+    <div>
+      <h3>Nёrds design studio</h3>
+      <p>191186, Санкт-Петербург, </p>
+      <p>ул Б. Конюшенная, д. 19/8</p>
+      <p>тел. +7 (812) 275-75-75</p>
+      <a href="#">Напишите нам</a>
+    </div>
+  </div>
+</section>
 </main>
 <footer>
   <section>
-    <h2>Ссылки на соцсети</h2>
+    <h2 class="visually-hidden">Ссылки на соцсети</h2>
     <ul>
       <li>
         <a href="" target="_blank">ВКонтакте</a>
@@ -123,4 +155,25 @@
   </section>
 </footer>
   </body>
+  <section>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <h2>Напишите нам</h2>
+      <fieldset class="visually-hidden">
+        <legend class="visually-hidden">Контактные данные</legend>
+         <div>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+         </div>
+         <div>
+          <label for="email">Ваш email:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+         </div>
+      </fieldset>
+        <div>
+          <label for="letter">Текст письма</label>
+          <textarea name="letter" id="letter" rows="8" cols="80">В свободной форме</textarea>
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+  </section>
 </html>
