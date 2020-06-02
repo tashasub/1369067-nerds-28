@@ -8,7 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="page-body inner-page">
+<body class="page-body">
 <header class="main-header">
   <div class="container">
   <nav class="main-navigation">
@@ -38,202 +38,206 @@
   </nav>
  </div>
 </header>
-<main class="page-catalog r">
+<main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <form class="filter" action="http://echo.htmlacademy.ru/" method="GET">
-        <!--  заготовка для стоимости
-      <label for="">
-        <h3>Стоимость:</h3>
-      </label>
--->
-        <fieldset class="grid-filter">
-          <legend>Сетка:</legend>
-          <ul>
-            <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" id="filter-adaptive" type="radio" name="grid" value="adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
+      <div class="page-catalog container">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр шаблонов</h2>
+          <form class="filter" action="http://echo.htmlacademy.ru/" method="GET">
+            <!--  заготовка для стоимости
+          <label for="">
+            <h3>Стоимость:</h3>
+          </label>
+    -->
+            <fieldset class="grid-filter">
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input class="filter-input-radio filter-input" id="filter-adaptive" type="radio" name="grid" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="filter-input-radio filter-input" id="filter-fixed" type="radio" name="grid" value="fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="filter-input-radio filter-input" id="filter-rubber" type="radio" name="grid" value="rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input-checkbox filter-input" id="filter-slider" type="checkbox" name="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input-checkbox filter-input" id="filter-benefits" type="checkbox" name="benefits">
+                  <label for="filter-benefits">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input-checkbox filter-input" id="filter-news" type="checkbox" name="news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input-checkbox filter-input" id="filter-gallery" type="checkbox" name="gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="filter-input-checkbox filter-input" id="filter-basket" type="checkbox" name="basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button button-secondary" type="submit">Показать</button>
+          </form>
+        </section>
+        <section>
+          <form class="sort" action="http://echo.htmlacademy.ru/" method="GET">
+              <fieldset>
+                <legend>Сортировать</legend>
+                <ul class="sort-list">
+                  <li class="sort-list-item">
+                    <input id="price-sort" type="radio" name="sort">
+                    <label for="price-sort">по цене</label>
+                  </li>
+                  <li>
+                    <input id="type-sort" type="radio" name="sort">
+                    <label for="type-sort">по типу</label>
+                  </li>
+                  <li>
+                    <input id="name-sort" type="radio" name="sort">
+                    <label for="name-sort">по имени</label>
+                  </li>
+                </ul>
+                <button type="button" name="button-ranging-down" value="ranging-down">
+                  <img src="http://placecorgi.com/11/10" alt="Сортировка по убыванию">
+                </button>
+                <button type="button" name="button-ranging-up" value="ranging-up">
+                  <img src="http://placecorgi.com/11/10" alt="Сортировка по возрастанию">
+                </button>
+              </fieldset>
+          </form>
+        </section>
+        <section class="catalog">
+          <ul class="catalog-list">
+            <li class="catalog-list-item">
+              <h3 class="visually-hidden">Проект Седона</h3>
+              <a href="">
+                <div class="browser-header">
+                  <img src="http://placecorgi.com/360/40" width="360" height="40" alt="Изображение шапки сайта в темном варианте">
+                </div>
+                <div class="catalog-list-image">
+                  <img src="img/img-sedona-1.jpg" width="360" height="580" alt="Скриншот сайта Седона">
+                </div>
+              </a>
+              <div class="catalog-list-item-info">
+                <a class="catalog-item" href="">sedona</a>
+                <p class="catalog-item-description">Информационный сайт для туристов</p>
+                <button class="button button-primary" type="button">9990</button>
+              </div>
             </li>
-            <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" id="filter-fixed" type="radio" name="grid" value="fixed">
-              <label for="filter-fixed">Фиксированная</label>
+            <li class="catalog-list-item">
+              <h3 class="visually-hidden">Проект Пинк</h3>
+              <a href="">
+                <div class="browser-header">
+                  <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
+                </div>
+                <div class="catalog-list-image">
+                  <img src="img/img-pink-1.jpg" alt="Скриншот сайта Пинк">
+                </div>
+              </a>
+              <div class="catalog-list-item-info">
+                <a class="catalog-item" href="">pink app</a>
+                <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+                <button class="button button-primary" type="button">9990</button>
+              </div>
             </li>
-            <li class="filter-option filter-radio">
-              <input class="filter-input-radio filter-input" id="filter-rubber" type="radio" name="grid" value="rubber">
-              <label for="filter-rubber">Резиновая</label>
+            <li class="catalog-list-item">
+              <h3 class="visually-hidden">Проект Бородинский</h3>
+              <a href="">
+                <div class="browser-header">
+                  <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
+                </div>
+                <div class="catalog-list-image">
+                  <img src="img/img-barbershop-1.jpg" alt="Скриншот сайта Бородинский">
+                </div>
+              </a>
+              <div class="catalog-list-item-info">
+                <a class="catalog-item" href="">barbershop</a>
+                <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
+                <button class="button button-primary" type="button">9990</button>
+              </div>
+            </li>
+            <li class="catalog-list-item">
+              <h3 class="visually-hidden">Проект Мишка</h3>
+              <a href="">
+                <div class="browser-header">
+                  <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
+                </div>
+                <div class="catalog-list-image">
+                  <img src="img/img-mishka-1.jpg" alt="Скриншот сайта Мишка">
+                </div>
+              </a>
+              <div class="catalog-list-item-info">
+                <a class="catalog-item" href="">mishka</a>
+                <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
+                <button class="button button-primary" type="button">9990</button>
+              </div>
+            </li>
+            <li class="catalog-list-item">
+              <h3 class="visually-hidden">Проект А+</h3>
+              <a href="">
+                <div class="browser-header">
+                  <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
+                </div>
+                <div class="catalog-list-image">
+                  <img src="img/img-aplus-1.jpg" alt="Скриншот сайта А+">
+                </div>
+              </a>
+              <div class="catalog-list-item-info">
+                <a class="catalog-item" href="">a plus</a>
+                <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
+                <button class="button button-primary" type="button">9990</button>
+              </div>
+            </li>
+            <li class="catalog-list-item">
+              <h3 class="visually-hidden">Проект Кваст</h3>
+              <a href="">
+                <div class="browser-header">
+                  <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
+                </div>
+                <div class="catalog-list-image">
+                  <img src="img/img-kvast-1.jpg" alt="Скриншот сайта Кваст">
+                </div>
+              </a>
+              <div class="catalog-list-item-info">
+                <a class="catalog-item" href="">кваст</a>
+                <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
+                <button class="button button-primary" type="button">9990</button>
+              </div>
             </li>
           </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" id="filter-slider" type="checkbox" name="slider" checked>
-              <label for="filter-slider">Слайдер</label>
-            </li>
-            <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" id="filter-benefits" type="checkbox" name="benefits">
-              <label for="filter-benefits">Блок преимуществ</label>
-            </li>
-            <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" id="filter-news" type="checkbox" name="news" checked>
-              <label for="filter-news">Новости</label>
-            </li>
-            <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" id="filter-gallery" type="checkbox" name="gallery">
-              <label for="filter-gallery">Галерея</label>
-            </li>
-            <li class="filter-option filter-checkbox">
-              <input class="filter-input-checkbox filter-input" id="filter-basket" type="checkbox" name="basket">
-              <label for="filter-basket">Корзина</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button button-secondary" type="submit">Показать</button>
-      </form>
-    </section>
-    <section>
-      <form class="sort" action="http://echo.htmlacademy.ru/" method="GET">
-          <fieldset>
-            <legend>Сортировать</legend>
-            <ul class="sort-list">
-              <li class="sort-list-item">
-                <input id="price-sort" type="radio" name="sort">
-                <label for="price-sort">по цене</label>
+          <div>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current">
+                <a>1</a>
               </li>
-              <li>
-                <input id="type-sort" type="radio" name="sort">
-                <label for="type-sort">по типу</label>
+              <li class="pagination-item">
+                <a href="#">2</a>
               </li>
-              <li>
-                <input id="name-sort" type="radio" name="sort">
-                <label for="name-sort">по имени</label>
+              <li class="pagination-item">
+                <a href="#">3</a>
               </li>
+              <button class="button button-secondary" type="button">Следующая</button>
             </ul>
-            <button type="button" name="button-ranging-down" value="ranging-down">
-              <img src="http://placecorgi.com/11/10" alt="Сортировка по убыванию">
-            </button>
-            <button type="button" name="button-ranging-up" value="ranging-up">
-              <img src="http://placecorgi.com/11/10" alt="Сортировка по возрастанию">
-            </button>
-          </fieldset>
-      </form>
-    </section>
-    <section class="catalog">
-      <ul class="catalog-list">
-        <li class="catalog-list-item">
-          <h3 class="visually-hidden">Проект Седона</h3>
-          <a href="">
-            <div>
-              <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в темном варианте">
-            </div>
-            <div>
-              <img src="img/img-sedona-1.jpg" alt="Скриншот сайта Седона">
-            </div>
-          </a>
-          <div class="catalog-list-item-info">
-            <a class="catalog-item" href="">sedona</a>
-            <p class="catalog-item-description">Информационный сайт для туристов</p>
-            <button class="button button-primary" type="button">9990</button>
           </div>
-        </li>
-        <li class="catalog-list-item">
-          <h3 class="visually-hidden">Проект Пинк</h3>
-          <a href="">
-            <div>
-              <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
-            </div>
-            <div>
-              <img src="img/img-pink-1.jpg" alt="Скриншот сайта Пинк">
-            </div>
-          </a>
-          <div class="catalog-list-item-info">
-            <a class="catalog-item" href="">pink app</a>
-            <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <button class="button button-primary" type="button">9990</button>
-          </div>
-        </li>
-        <li class="catalog-list-item">
-          <h3 class="visually-hidden">Проект Бородинский</h3>
-          <a href="">
-            <div>
-              <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
-            </div>
-            <div>
-              <img src="img/img-barbershop-1.jpg" alt="Скриншот сайта Бородинский">
-            </div>
-          </a>
-          <div class="catalog-list-item-info">
-            <a class="catalog-item" href="">barbershop</a>
-            <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
-            <button class="button button-primary" type="button">9990</button>
-          </div>
-        </li>
-        <li class="catalog-list-item">
-          <h3 class="visually-hidden">Проект Мишка</h3>
-          <a href="">
-            <div>
-              <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
-            </div>
-            <div>
-              <img src="img/img-mishka-1.jpg" alt="Скриншот сайта Мишка">
-            </div>
-          </a>
-          <div class="catalog-list-item-info">
-            <a class="catalog-item" href="">mishka</a>
-            <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
-            <button class="button button-primary" type="button">9990</button>
-          </div>
-        </li>
-        <li class="catalog-list-item">
-          <h3 class="visually-hidden">Проект А+</h3>
-          <a href="">
-            <div>
-              <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
-            </div>
-            <div>
-              <img src="img/img-aplus-1.jpg" alt="Скриншот сайта А+">
-            </div>
-          </a>
-          <div class="catalog-list-item-info">
-            <a class="catalog-item" href="">a plus</a>
-            <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
-            <button class="button button-primary" type="button">9990</button>
-          </div>
-        </li>
-        <li class="catalog-list-item">
-          <h3 class="visually-hidden">Проект Кваст</h3>
-          <a href="">
-            <div>
-              <img src="http://placecorgi.com/360/40" alt="Изображение шапки сайта в светлом варианте">
-            </div>
-            <div>
-              <img src="img/img-kvast-1.jpg" alt="Скриншот сайта Кваст">
-            </div>
-          </a>
-          <div class="catalog-list-item-info">
-            <a class="catalog-item" href="">кваст</a>
-            <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
-            <button class="button button-primary" type="button">9990</button>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <div>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a>1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-        <button class="button button-secondary" type="button">Следующая</button>
-      </ul>
-    </div>
+        </section>
+      </div>
+
+
   </main>
   <footer class="page-footer main-footer">
     <section class="map-footer">
