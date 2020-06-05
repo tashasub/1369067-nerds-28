@@ -216,7 +216,6 @@ color: #A6A6A6;
 }
 
 .header-cart {
-  position: relative;
   max-width: 115px;
   outline: 5px solid rgba(255, 0, 255, 0.3);
   outline-offset: -5px;
@@ -228,7 +227,8 @@ color: #A6A6A6;
   top: 7px;
   right: 100px;
   width: 15px;
-  background-image: url("img/cart-icon.svg");
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -445,7 +445,7 @@ font-weight: bold;
 
 /* Our progects */
 
-.our-progects {
+.our-projects {
   width: 100%;
   min-height: 180px;
   margin-bottom: 80px;
@@ -457,7 +457,7 @@ font-weight: bold;
 
 }
 
-.our-progects ul {
+.our-projects ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -473,13 +473,14 @@ font-weight: bold;
 
 }
 
-.our-progects li {
+.our-projects li {
   text-align: center;
   min-width: 290px;
 
   outline: 5px solid rgba(0, 170, 125, 0.7);
   outline-offset: -5px;
 }
+
 
 /*Footer*/
 
