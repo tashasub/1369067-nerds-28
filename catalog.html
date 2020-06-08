@@ -71,82 +71,92 @@
           <fieldset class="filter-grid">
             <legend>Сетка:</legend>
             <ul>
-              <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" id="filter-adaptive" type="radio" name="grid" value="adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="radio" name="grid" value="adaptive" checked>
+                  <span class="filter-radio-button"></span>
+                  Адаптивная
+                </label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" id="filter-fixed" type="radio" name="grid" value="fixed">
-                <label for="filter-fixed">Фиксированная</label>
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="radio" name="grid" value="fixed">
+                  <span class="filter-radio-button"></span>
+                  Фиксированная
+                </label>
               </li>
-              <li class="filter-option filter-radio">
-                <input class="filter-input-radio filter-input" id="filter-rubber" type="radio" name="grid" value="rubber">
-                <label for="filter-rubber">Резиновая</label>
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="radio" name="grid" value="rubber">
+                  <span class="filter-radio-button"></span>
+                  Резиновая
+                </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-grid">
             <legend>Особенности:</legend>
             <ul>
-              <li class="filter-option filter-checkbox">
-                <label>
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="slider" checked>
-                </label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <label>
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="benefits">
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="checkbox" name="slider" checked>
                   <span class="filter-checkbox"></span>
+                  Слайдер
                 </label>
               </li>
-              <li class="filter-option filter-checkbox">
-                <label>
-                    <input class="filter-input-checkbox filter-input" type="checkbox" name="news" checked>
-                    <span class="filter-checkbox"></span>
-                </label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <label>
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="gallery">
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="checkbox" name="benefits">
                   <span class="filter-checkbox"></span>
+                  Блок преимуществ
                 </label>
               </li>
-              <li class="filter-option filter-checkbox">
-                <label>
-                  <input class="filter-input-checkbox filter-input" type="checkbox" name="basket">
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="checkbox" name="news" checked>
                   <span class="filter-checkbox"></span>
+                  Новости
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="checkbox" name="gallery">
+                  <span class="filter-checkbox"></span>
+                  Галерея
+                </label>
+              </li>
+              <li class="filter-item">
+                <label class="filter-check">
+                  <input class="filter-input" type="checkbox" name="basket">
+                  <span class="filter-checkbox"></span>
+                  Корзина
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="button button-secondary" type="submit">Показать</button>
+          <button class="button button-secondary button-show" type="submit">Показать</button>
         </form>
       </section>
-      <section>
-        <form class="sort" action="http://echo.htmlacademy.ru/" method="GET">
-          <fieldset class="filter-grid">
-            <legend>Сортировать</legend>
-            <ul class="sort-list">
-              <li class="sort-list-item">
-                <input id="price-sort" type="radio" name="sort">
-                <label for="price-sort">по цене</label>
-              </li>
-              <li>
-                <input id="type-sort" type="radio" name="sort" value="sort-type">
-                <label for="type-sort">по типу</label>
-              </li>
-              <li>
-                <input id="name-sort" type="radio" name="sort" value="sort-name">
-                <label for="name-sort">по имени</label>
-              </li>
-            </ul>
-            <button type="button" name="button-ranging-down" value="ranging-down">
-              <img src="img/icon-down-dir.svg" alt="Сортировка по убыванию">
+      <section class="sorting">
+        <div>
+          <p class="title-sorting">Сортировать</p>
+        </div>
+        <div class="sorting-buttons">
+          <div>
+            <button class="button button-sort" type="button" name="button-price" value="order-by-price">по цене</button>
+            <button class="button button-sort" type="button" name="button-type" value="order-by-type">по типу</button>
+            <button class="button button-sort" type="button" name="button-name" value="order-by-name">по названию</button>
+          </div>
+          <div>
+            <button class="button sorting-ranging" type="button" name="button-ranging-down" value="ranging-down">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
             </button>
-            <button type="button" name="button-ranging-up" value="ranging-up">
-              <img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию">
+            <button class="button sorting-ranging" type="button" name="button-ranging-up" value="ranging-up">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
             </button>
-          </fieldset>
+          </div>
+        </div>
+        </fieldset>
         </form>
       </section>
       <section class="catalog">
