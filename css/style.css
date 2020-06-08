@@ -847,6 +847,8 @@ justify-content: space-between;
   color: rgba(var(--primary-darkgray),0.4);
 }
 
+
+
 .filter-input-radio:hover + label,
 .filter-input-checkbox:hover + label {
   color: rgba(var(--primary-darkgray),1);
