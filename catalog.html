@@ -29,14 +29,14 @@
             <a href="">Клиенты</a>
           </li>
           <li>
-            <a class="site-navigation-active" href="catalog.html">Магазин</a>
+            <a class="site-navigation site-navigation-active" href="catalog.html">Магазин</a>
           </li>
           <li>
             <a href="">Контакты</a>
           </li>
         </ul>
         <div class="header-cart">
-          <a class="cart-link" width="15" height="15" href="">Корзина</a>
+          <a class="cart-link" href="">Корзина</a>
         </div>
       </nav>
     </div>
@@ -99,35 +99,35 @@
             <ul>
               <li class="filter-item">
                 <label class="filter-check">
-                  <input class="filter-input" type="checkbox" name="slider" checked>
+                  <input class="filter-input" type="checkbox" name="slider" value="slider" checked>
                   <span class="filter-checkbox"></span>
                   Слайдер
                 </label>
               </li>
               <li class="filter-item">
                 <label class="filter-check">
-                  <input class="filter-input" type="checkbox" name="benefits">
+                  <input class="filter-input" type="checkbox" name="benefits" value="benefits">
                   <span class="filter-checkbox"></span>
                   Блок преимуществ
                 </label>
               </li>
               <li class="filter-item">
                 <label class="filter-check">
-                  <input class="filter-input" type="checkbox" name="news" checked>
+                  <input class="filter-input" type="checkbox" name="news" value="news" checked>
                   <span class="filter-checkbox"></span>
                   Новости
                 </label>
               </li>
               <li class="filter-item">
                 <label class="filter-check">
-                  <input class="filter-input" type="checkbox" name="gallery">
+                  <input class="filter-input" type="checkbox" name="gallery" value="gallery">
                   <span class="filter-checkbox"></span>
                   Галерея
                 </label>
               </li>
               <li class="filter-item">
                 <label class="filter-check">
-                  <input class="filter-input" type="checkbox" name="basket">
+                  <input class="filter-input" type="checkbox" name="basket" value="basket">
                   <span class="filter-checkbox"></span>
                   Корзина
                 </label>
@@ -156,8 +156,6 @@
             </button>
           </div>
         </div>
-        </fieldset>
-        </form>
       </section>
       <section class="catalog">
         <ul class="catalog-list">
@@ -269,8 +267,10 @@
             <li class="pagination-item">
               <a href="#">3</a>
             </li>
+            <li class="pagination-item">
+              <button class="button button-secondary button-pagination" type="button">Следующая</button>
+            </li>
           </ul>
-          <button class="button button-secondary" type="button">Следующая</button>
         </div>
       </section>
     </div>
