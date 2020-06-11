@@ -1188,19 +1188,125 @@ margin: 0;
 /* Modal */
 
 .modal {
-display: none;
-
+/* dispay: none; */
+width: 960px;
+box-sizing: border-box;
+position: fixed;
+top: 50px;
+right: 0;
+bottom: auto;
+left: 0;
+margin: auto;
+padding: 65px 100px 85px 100px;
+background: rgba(var(--primary-white),1);
+box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.modal-title h2 {
+.modal-title {
   margin: 0;
   margin-bottom: 37px;
+  font-weight: bold;
   font-size: 45px;
 }
 
 /* Form */
 
-.modal-form p {
-  margin: 0;
-  margin-bottom: 34px;
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.form-text {
+  width: 100%;
+  margin-bottom: 47px;
+  margin-top: 34px;
+}
+
+.modal-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.modal-email {
+  flex-grow: 1;
+}
+
+.modal-name {
+flex-grow: 1;
+margin-right: 56px;
+}
+
+.modal-name-input,
+.modal-email-input {
+  width: 100%;
+  min-height: 50px;
+  border: 2px solid #D7DCDE;
+  border-radius: 3px;
+}
+
+.modal-text-textarea {
+  width: 100%;
+  border: 2px solid #D7DCDE;
+  border-radius: 3px;
+
+}
+
+.modal-text-textarea::-webkit-input-placeholder,
+.modal-email-input::-webkit-input-placeholder,
+.modal-name-input::-webkit-input-placeholder
+{
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.modal-name-input::-moz-placeholder,
+.modal-email-input::-moz-placeholder,
+.modal-text-textarea::-moz-placeholder{
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.modal-text-textarea::-ms-input-placeholder,
+.modal-name-input::-ms-input-placeholder,
+.modal-email-input::-ms-input-placeholder {
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.modal-button {
+  padding: 17px 83px 15px 83px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 27px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #FECCCE;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
