@@ -6,27 +6,61 @@ var modalNameInput = document.querySelector(".modal-name-input");
 var modalEmailInput = document.querySelector(".modal-email-input");
 var modalTextTextarea = document.querySelector(".modal-text-textarea");
 
+var isStorageSupport = true;
+var login = "";
+var email = "";
 
-buttonMail.addEventListener("click", function (evt) {
+try {
+  login = localStorage.getItem("login");
+  email = localStorage.getItem("email")
+} catch (err) {
+  isStorageSupport = false;
+}
+
+buttonMail.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalContactUs.classList.add("modal-show");
+
+  if (login) {
+    modalNameInput.value = login;
+    if (email) {
+      modalEmailInput.value = email;
+      modalTextTextarea.focus();
+    } else {
+      modalEmailInput.focus();
+    }
+  } else {
+    modalNameInput.focus();
+  }
 });
 
-loginClose.addEventListener("click", function (evt) {
+modalClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalContactUs.classList.remove("modal-show");
+  modalContactUs.classList.remove("modal-error");
 });
 
-modalForm.addEventListener("submit", function (evt) {
-  if (!modalNameInput.value || modalEmailInput.value || modalTextTextarea.value) {
+modalForm.addEventListener("submit", function(evt) {
+  if (!modalNameInput.value || !modalEmailInput.value || !modalTextTextarea.value) {
     evt.preventDefault();
+    modalContactUs.classList.remove("modal-error");
+    modalContactUs.offsetWidth = modalContactUs.offsetWidth;
+    modalContactUs.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", modalNameInput.value);
+      localStorage.setItem("email", modalEmailInput.value);
+    }
+  }
 });
 
-window.addEventListener("keydown", function (evt) {
+
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     if (modalContactUs.classList.contains("modal-show")) {
       evt.preventDefault();
       modalContactUs.classList.remove("modal-show");
+      modalContactUs.classList.remove("modal-error");
     }
   }
 });
