@@ -171,21 +171,17 @@ height: 100%;
 .main-header-logo {
   width: 160px;
   height: 65px;
-  color: rgba(var(--primary-black), 1);
+  fill: rgba(var(--primary-black), 1);
   /* outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px; */
 }
 
-.main-header-logo:action {
-color: #A6A6A6;
-}
-
 .main-header-logo:hover {
-  color: rgba(var(--primary-black), 1);
+  fill: rgba(var(--primary-black), 1);
 }
 
 .main-header-logo:active {
-  color: var(--active-link-gray);
+  fill: #A6A6A6;
 }
 
 .site-navigation {
