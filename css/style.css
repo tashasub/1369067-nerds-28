@@ -767,6 +767,14 @@ left: 822px;
   background-color: var(--hover-red);
 }
 
+.social-button a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-button:active path {
    fill: rgba(var(--primary-white),0.3);
    background-color: var(--active-red);
