@@ -255,8 +255,15 @@ display: inline-block;
   color: rgba(var(--primary-black),0.3);
 }
 
-.site-navigation-active {
-  border-bottom: 2px solid var(--primary-red);
+.site-navigation-active::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 61%;
+  height: 2px;
+  background: var(--primary-red);
+  left: 25px;
+  bottom: 3px;
 }
 .page-title {
   background-color: var(--primary-gray);
