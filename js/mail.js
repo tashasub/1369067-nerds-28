@@ -5,6 +5,7 @@ var modalClose = document.querySelector(".modal-close");
 var modalNameInput = document.querySelector(".modal-name-input");
 var modalEmailInput = document.querySelector(".modal-email-input");
 var modalTextTextarea = document.querySelector(".modal-text-textarea");
+var ESC_CODE = 27;
 
 var isStorageSupport = true;
 var login = "";
@@ -41,26 +42,22 @@ modalClose.addEventListener("click", function(evt) {
 });
 
 modalForm.addEventListener("submit", function(evt) {
-  if (!modalNameInput.value || !modalEmailInput.value || !modalTextTextarea.value) {
+  if (!(modalNameInput.value || modalEmailInput.value || modalTextTextarea.value)) {
     evt.preventDefault();
     modalContactUs.classList.remove("modal-error");
     modalContactUs.offsetWidth = modalContactUs.offsetWidth;
     modalContactUs.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
+  } else if (isStorageSupport) {
       localStorage.setItem("login", modalNameInput.value);
       localStorage.setItem("email", modalEmailInput.value);
     }
-  }
 });
 
 
 window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
-    if (modalContactUs.classList.contains("modal-show")) {
+  if ((evt.keyCode === ESC_CODE) && modalContactUs.classList.contains("modal-show")) {
       evt.preventDefault();
       modalContactUs.classList.remove("modal-show");
       modalContactUs.classList.remove("modal-error");
     }
-  }
 });
