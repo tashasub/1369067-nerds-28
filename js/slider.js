@@ -1,8 +1,9 @@
 var sliderControls = document.querySelectorAll(".slider-control");
 var sliderItems = document.querySelectorAll(".slider-item");
 
-sliderControls.forEach(function(sliderControl, i) {
-  if (sliderControls && sliderControls.length) {
+if (sliderControls && sliderControls.length) {
+
+  sliderControls.forEach(function(sliderControl, i) {
     sliderControl.addEventListener("click", function() {
 
       sliderControls.forEach(function(sliderItemRemove) {
@@ -16,5 +17,5 @@ sliderControls.forEach(function(sliderControl, i) {
 
       sliderItems[i].classList.add("slide-current");
     });
-  }
-});
+  });
+}
