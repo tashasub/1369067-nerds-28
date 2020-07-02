@@ -208,6 +208,7 @@ height: 100%;
 
 .site-navigation li {
   display: inline-block;
+  vertical-align: top;
   margin-right: 45px;
 }
 
@@ -242,6 +243,7 @@ height: 100%;
 
 .site-navigation-active::before {
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   content: "";
   width: 100%;
@@ -284,6 +286,7 @@ height: 100%;
 
 .slider-item {
   position: relative;
+  background-color: var(--primary-gray);
   width: 1160px;
 }
 
@@ -654,6 +657,7 @@ margin-bottom: 31px;
 
 .map-image {
   width: 100%;
+  background-color: #E9E5DC;
 }
 
 .map-marker {
@@ -1311,6 +1315,42 @@ flex-grow: 1;
 margin-right: 56px;
 }
 
+.modal-text-textarea::-webkit-input-placeholder,
+.modal-email-input::-webkit-input-placeholder,
+.modal-name-input::-webkit-input-placeholder {
+color: #A2A2A2;
+}
+
+.modal-name-input::-moz-placeholder,
+.modal-email-input::-moz-placeholder,
+.modal-text-textarea::-moz-placeholder {
+color: #A2A2A2;
+}
+
+.modal-text-textarea::-ms-input-placeholder,
+.modal-name-input::-ms-input-placeholder,
+.modal-email-input::-ms-input-placeholder {
+color: #A2A2A2;
+}
+
+.modal-text-textarea:focus::-webkit-input-placeholder,
+.modal-email-input:focus::-webkit-input-placeholder,
+.modal-name-input:focus::-webkit-input-placeholder {
+color: #444444;
+}
+
+.modal-text-textarea:focus::-moz-placeholder,
+.modal-email-input:focus::-moz-placeholder,
+.modal-name-input:focus::-moz-placeholder {
+color: #444444;
+}
+
+.modal-text-textarea:focus::-ms-input-placeholder,
+.modal-email-input:focus::-ms-input-placeholder,
+.modal-name-input:focus::-ms-input-placeholder {
+color: #444444;
+}
+
 .modal-name-input,
 .modal-email-input {
   width: 100%;
@@ -1350,42 +1390,6 @@ transition: 0.3s;
 .modal-text-textarea:invalid {
   border: 2px solid var(--primary-red);
   color: var(--primary-red);
-}
-
-.modal-text-textarea::-webkit-input-placeholder,
-.modal-email-input::-webkit-input-placeholder,
-.modal-name-input::-webkit-input-placeholder {
-color: #A2A2A2;
-}
-
-.modal-name-input::-moz-placeholder,
-.modal-email-input::-moz-placeholder,
-.modal-text-textarea::-moz-placeholder {
-color: #A2A2A2;
-}
-
-.modal-text-textarea::-ms-input-placeholder,
-.modal-name-input::-ms-input-placeholder,
-.modal-email-input::-ms-input-placeholder {
-color: #A2A2A2;
-}
-
-.modal-text-textarea:focus::-webkit-input-placeholder,
-.modal-email-input:focus::-webkit-input-placeholder,
-.modal-name-input:focus::-webkit-input-placeholder {
-color: #444444;
-}
-
-.modal-text-textarea:focus::-moz-placeholder,
-.modal-email-input:focus::-moz-placeholder,
-.modal-name-input:focus::-moz-placeholder {
-color: #444444;
-}
-
-.modal-text-textarea:focus::-ms-input-placeholder,
-.modal-email-input:focus::-ms-input-placeholder,
-.modal-name-input:focus::-ms-input-placeholder {
-color: #444444;
 }
 
 .modal-button {
