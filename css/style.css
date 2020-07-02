@@ -379,7 +379,7 @@ height: 100%;
 /* Features */
 
 .features {
-  margin-top: 72px;
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -661,10 +661,13 @@ margin-bottom: 31px;
   z-index: -1;
 }
 
-.map-marker {
+.map-address-container {
+  border: 1px solid transparent;
 }
 
 .map-address {
+  position: absolute;
+  top: 54px;
   width: 319px;
   min-height: 308px;
   background-color: rgba(var(--primary-white),1);
