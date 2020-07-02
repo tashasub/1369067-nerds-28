@@ -208,6 +208,7 @@ height: 100%;
 
 .site-navigation li {
   display: inline-block;
+  vertical-align: top;
   margin-right: 45px;
 }
 
@@ -242,6 +243,7 @@ height: 100%;
 
 .site-navigation-active::before {
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   content: "";
   width: 100%;
