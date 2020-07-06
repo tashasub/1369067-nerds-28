@@ -593,6 +593,7 @@ margin-bottom: 31px;
 
 .projects-item {
   position: relative;
+  min-width: 185px;
 }
 
 .projects-item:not(:last-child)::after {
