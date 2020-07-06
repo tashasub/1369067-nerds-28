@@ -382,7 +382,7 @@ height: 100%;
 
 .features {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .features-list {
@@ -396,6 +396,7 @@ height: 100%;
 }
 
 .features-item {
+  margin-bottom: 20px;
   text-align: left;
   min-height: 347px;
 }
@@ -483,7 +484,7 @@ height: 100%;
 .values-company {
   max-width: 646px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   color: var(--text-gray);
 }
 
@@ -583,6 +584,7 @@ margin-bottom: 31px;
   padding-left: 17px;
   padding-right: 28px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
